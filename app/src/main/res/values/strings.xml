@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">app</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">你的邮箱</string>
+    <string name="prompt_name">你的名称</string>
+    <string name="prompt_desc">自我介绍</string>
+    <string name="prompt_password">请输入密码</string>
+    <string name="action_sign_in">登陆</string>
+    <string name="action_regist">注册</string>
+    <string name="action_sign_in_short">登陆</string>
+    <string name="error_invalid_email">邮箱格式不正确</string>
+    <string name="error_invalid_password">密码太短啦</string>
+    <string name="error_incorrect_password">密码不正确</string>
+    <string name="error_field_required">请求失败</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="homepage">首页</string>
+    <string name="myself">我的</string>
+    <string name="dynamic">动态</string>
+    <string name="hot">热</string>
+    <string name="bilibili">Bilibili</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="title_activity_title1">TitleActivity1</string>
+    <string name="fortop">置顶</string>
+    <string name="title_activity_shouye_">Shouye_Activity</string>
+    <string name="tuijian1">[2020年][约定的梦幻岛][第二期][放送预定][PV][中文字幕]</string>
+    <string name="title_activity_homepage_essay1">homepage_essay1</string>
+    <string name="homepage_essay1_title">新番《女高中生的无所事事》7月放送 番宣CM公开</string>
+    <string name="homepage_essay1_1">《女高中生的无所事事》改编自ビーノ创作的同名漫画，曾于2018年11月1日宣布动画化，近日官方公开了最新的宣番CM，动画将在7月播出。\n
+    漫画《女高中生的无所事事》是在KADOKAWA的网络漫画平台ComicNewtype上连载的作品，讲述了偏差值不够的笨蛋田中、沉迷BL的腐女菊池和面无表情的才女鹭宫等个性丰富的角色们演绎出来的无所事事的日常生活。
+    </string>
+
+    <string name="homepage_essay1_2">【STAFF】\n
+
+原作：ビーノ（KADOKAWA《Comic Newtype》连载）\n
+总监督：高桥丈夫\n
+监督：三瓶圣\n
+系列构成：横谷昌宏\n
+角色设计、总作画监督：安田祥子\n
+次要角色设计：古川英树、番由纪子、满若高代\n
+监督辅佐：橘纱央莉\n
+美术监督：齐藤隆博\n
+美术设定：中村嘉博\n
+色彩设计：铃木咲绘\n
+摄影监督：山本弥芳\n
+编辑：丹彩子\n
+音响监督：明田川仁\n
+音乐：菊谷知树\n
+音乐制作：KADOKAWA\n
+动画制作：Passione\n
+【CAST】\n
+田中望（笨蛋）：赤崎千夏\n
+菊池茜（阿宅）：户松遥\n
+鹭宫栞（机器人）：丰崎爱生\n
+百井咲久（萝莉）：长绳麻理亚\n
+山本美波（有病）：富田美忧\n
+一奏（死认真）：高桥李依\n
+染谷莉莉（百合）：佐藤聪美\n
+久条翡翠（魔女）：M·A·O\n
+佐渡正敬（早稻田）：兴津和幸</string>
+    <string name="homepage_essay1_3"></string>
+    <string name="homepage_essay1_4"></string>
+    <string name="homepage_essay1_5"></string>
+    <string name="homepage_essay1_6"></string>
+    <string name="homepage_essay1_7"></string>
+    <string name="homepage_essay1_8"></string>
+    <string name="homepage_essay1_9"></string>
+    <string name="homepage_essay1_10"></string>
+    <string name="homepage_essay1_11"></string>
+    <string name="title_activity_user_setting_sex">UserSettingSexActivity</string>
+    <string name="title_activity_user_setting_desc">UserSettingDescActivity</string>
+</resources>

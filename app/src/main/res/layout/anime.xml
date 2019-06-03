@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/essay1_anime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="@drawable/divider"
+        android:showDividers="end|none|middle"
+        >
+    <!--这是第五段：文本+组图-->
+    <GridLayout
+        android:id="@+id/essay5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="5"
+            android:layout_rowSpan="1"
+            android:text="@string/tuijian1"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_columnSpan="5"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_columnSpan="3"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/q" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_columnSpan="1"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/q"
+
+                />
+
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_columnSpan="1"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/q" /></LinearLayout>
+
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:background="@drawable/fortop1"
+            android:text="@string/fortop"
+            android:textColor="#f00"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bilibili"
+            android:layout_gravity="bottom|left"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20评论"
+            android:layout_gravity="bottom|left"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刚刚"
+            android:layout_gravity="bottom|left"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            />
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/for_x"
+            android:text="x"
+            android:textColor="#9B9B9B"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            />
+    </GridLayout>
+     <!--这是第一段：只有文本-->
+    <GridLayout
+    android:id="@+id/essay1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:rowCount="5"
+    android:columnCount="5"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="5"
+        android:layout_rowSpan="5"
+        android:text="@string/tuijian1"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        />
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:background="@drawable/fortop1"
+        android:text="@string/hot"
+        android:textColor="#f00"
+        android:layout_gravity="left"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bilibili"
+        android:layout_gravity="bottom|left"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20评论"
+        android:layout_gravity="bottom|left"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="刚刚"
+        android:layout_gravity="bottom|left"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        />
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/for_x"
+        android:text="x"
+        android:textColor="#9B9B9B"
+        android:layout_gravity="right"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        />
+</GridLayout>
+    <!--这是第三段：文本+小图片-->
+    <GridLayout
+        android:id="@+id/essay3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:orientation="horizontal"
+        android:rowCount="3">
+
+        <TextView
+            android:id="@+id/tx22"
+            android:layout_width="206dp"
+            android:layout_height="100dp"
+            android:layout_rowSpan="2"
+            android:layout_columnSpan="4"
+            android:layout_marginTop="10dp"
+            android:text="@string/tuijian1"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_rowSpan="2"
+            android:layout_columnSpan="1"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/q" />
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/fortop1"
+            android:text="@string/hot"
+            android:textColor="#f00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+
+            android:layout_marginLeft="5dp"
+            android:text="bilibili"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="5dp"
+            android:text="20评论"
+
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="5dp"
+
+            android:text="刚刚"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="8dp"
+
+            android:background="@drawable/for_x"
+            android:text="x"
+            android:textColor="#9B9B9B" />
+    </GridLayout>
+    <!--这是第四段：文本+视频-->
+    <GridLayout
+        android:id="@+id/essay4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="5"
+            android:layout_rowSpan="1"
+            android:text="@string/tuijian1"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            />
+        <VideoView
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="5"
+            />
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:background="@drawable/fortop1"
+            android:text="@string/hot"
+            android:textColor="#f00"
+            android:layout_gravity="left"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bilibili"
+            android:layout_gravity="bottom|left"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20评论"
+            android:layout_gravity="bottom|left"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刚刚"
+            android:layout_gravity="bottom|left"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            />
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/for_x"
+            android:text="x"
+            android:textColor="#9B9B9B"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            />
+    </GridLayout>
+    <!--这是第二段：文本+大图片-->
+    <GridLayout
+        android:id="@+id/essay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:orientation="horizontal"
+        android:rowCount="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="5"
+
+            android:layout_marginTop="10dp"
+            android:text="@string/tuijian1"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+
+            android:layout_columnSpan="5"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/q" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+
+            android:layout_gravity="left"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/fortop1"
+            android:text="@string/hot"
+            android:layout_marginBottom="2dp"
+            android:textColor="#f00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="5dp"
+            android:text="bilibili"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="5dp"
+            android:text="20评论"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="5dp"
+
+            android:text="刚刚"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="8dp"
+
+            android:background="@drawable/for_x"
+            android:text="x"
+            android:textColor="#9B9B9B" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/essay6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="30"
+        android:columnCount="5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="5"
+            android:layout_rowSpan="5"
+            android:text="@string/tuijian1"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            />
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:background="@drawable/fortop1"
+            android:text="@string/fortop"
+            android:layout_marginBottom="2dp"
+            android:textColor="#f00"
+            android:layout_gravity="left"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bilibili"
+            android:layout_gravity="bottom|left"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20评论"
+            android:layout_gravity="bottom|left"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刚刚"
+            android:layout_gravity="bottom|left"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            />
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/for_x"
+            android:text="x"
+            android:textColor="#9B9B9B"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            />
+    </GridLayout>
+    <GridLayout
+        android:id="@+id/essay7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="30"
+        android:columnCount="5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="5"
+            android:layout_rowSpan="5"
+            android:text="@string/tuijian1"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            />
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:background="@drawable/fortop1"
+            android:text="@string/fortop"
+            android:textColor="#f00"
+            android:layout_gravity="left"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bilibili"
+            android:layout_gravity="bottom|left"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20评论"
+            android:layout_gravity="bottom|left"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刚刚"
+            android:layout_gravity="bottom|left"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            />
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/for_x"
+            android:text="x"
+            android:textColor="#9B9B9B"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            />
+    </GridLayout>
+    </LinearLayout>
+
+
+

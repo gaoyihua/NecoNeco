@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homepage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="1dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginLeft="2dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorblue"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:gravity="right"
+    >
+
+
+
+    <EditText
+        android:id="@+id/search1"
+        android:layout_width="230dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edit"
+        android:inputType="text"
+
+        android:textSize="20sp"
+
+        />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/search"
+        android:layout_marginRight="8dp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+
+        >
+
+        <RadioGroup
+            android:id="@+id/rbg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="50dp"
+            android:checkedButton="@id/recommend_rbt"
+
+            >
+            <RadioButton
+                android:id="@+id/recommend_rbt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:layout_gravity="center"
+
+                android:drawableTop="@drawable/tuijian"
+                android:textSize="8pt"
+
+
+
+                />
+            <RadioButton
+                android:id="@+id/anime_rbt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/anime"
+
+                android:textSize="8pt"
+                />
+            <RadioButton
+                android:id="@+id/game_rbt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/game"
+
+                android:textSize="8pt"
+
+
+                />
+            <RadioButton
+                android:id="@+id/music_rbt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/music"
+
+                android:textSize="8pt"
+
+
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+        <include
+        android:id="@+id/recommend_essay"
+        layout="@layout/recommend"
+        android:visibility="visible"
+        />
+        <include
+            android:id="@+id/anime_essay"
+            layout="@layout/anime"
+            android:visibility="gone"
+            />
+        <include
+            android:id="@+id/game_essay"
+            layout="@layout/game"
+            android:visibility="gone"
+            />
+        <include
+            android:id="@+id/music_essay"
+            layout="@layout/music"
+            android:visibility="gone"
+            />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="55dp"
+    android:background="#ffffff"
+
+    />
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
