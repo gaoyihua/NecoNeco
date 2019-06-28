@@ -1,0 +1,32 @@
+db.execSQL("insert into video values(?, ?, ?, ?, ?, ?)",
+        new Object[] {
+                null,
+                "汽车1",
+                "https://flv2.bn.netease.com/videolib1/1811/26/OqJAZ893T/HD/OqJAZ893T-mobile.mp4",
+                "性价比高", R.mipmap.logo3, "汽车"});
+db.execSQL("insert into video values(?, ?, ?, ?, ?, ?)",
+        new Object[] {
+                null,
+                "汽车2",
+                "https://flv2.bn.netease.com/videolib1/1811/26/OqJAZ893T/HD/OqJAZ893T-mobile.mp4",
+                "性价比高", R.mipmap.logo3, "汽车"});
+db.execSQL("insert into video values(?, ?, ?, ?, ?, ?)",
+        new Object[] {
+                null,
+                "汽车2",
+                "https://flv2.bn.netease.com/videolib1/1811/26/OqJAZ893T/HD/OqJAZ893T-mobile.mp4",
+                "性价比高", R.mipmap.logo3, "电影"});
+db.execSQL("insert into video values(?, ?, ?, ?, ?, ?)",
+        new Object[] {
+                null,
+                "汽车2",
+                "https://flv2.bn.netease.com/videolib1/1811/26/OqJAZ893T/HD/OqJAZ893T-mobile.mp4",
+                "性价比高", R.mipmap.logo3, "电影"});
+
+
+String url = "https://flv2.bn.netease.com/videolib1/1811/26/OqJAZ893T/HD/OqJAZ893T-mobile.mp4";
+Video car = new Video("汽车1", url, R.mipmap.logo3);
+videoList.add(car);
+String url2 = "https://flv2.bn.netease.com/videolib1/1811/26/OqJAZ893T/HD/OqJAZ893T-mobile.mp4";
+Video car2 = new Video("汽车2", url2, R.mipmap.logo3);
+videoList.add(car2);

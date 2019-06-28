@@ -12,10 +12,10 @@ import android.widget.Toast;
 import com.gary.neconeco.R;
 
 public class UserSettingActivity extends AppCompatActivity {
-    private String mEmail = null;
-    private String name = null;
+    private String mEmail;
+    private String name;
     private int id;
-    private String description = null;
+    private String description;
     private int sex;
     private TextView emailText;
     private TextView nameText;

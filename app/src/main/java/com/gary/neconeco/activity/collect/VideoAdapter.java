@@ -28,11 +28,15 @@ public class VideoAdapter extends ArrayAdapter {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         Video video = (Video)getItem(position);
         //使用Inflater对象来将布局文件解析成一个View
-        View view = LayoutInflater.from(getContext()).inflate(resourceId, null);//实例化一个对象
-        ImageView videoImage = view.findViewById(R.id.video_image);//获取该布局内的图片视图
-        TextView videoName = view.findViewById(R.id.video_name);//获取该布局内的文本视图
-        videoImage.setImageResource(video.getImageId());//为图片视图设置图片资源
-        videoName.setText(video.getName());//为文本视图设置文本内容
+        View view = LayoutInflater.from(getContext()).inflate(resourceId, null);
+        //获取该布局内的图片视图
+        ImageView videoImage = view.findViewById(R.id.video_image);
+        //获取该布局内的文本视图
+        TextView videoName = view.findViewById(R.id.video_name);
+        //为图片视图设置图片资源
+        videoImage.setImageResource(video.getImageId());
+        //为文本视图设置文本内容
+        videoName.setText(video.getName());
         return view;
     }
 }

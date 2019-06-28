@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listAnimeItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <GridLayout
+        android:id="@+id/animeItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:orientation="horizontal"
+        android:rowCount="3">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="5"
+
+            android:layout_marginTop="10dp"
+            android:text="@string/tuijian1"
+            android:textSize="22sp"/>
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+
+            android:layout_gravity="left"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/fortop1"
+            android:text="@string/hot"
+            android:layout_marginBottom="2dp"
+            android:textColor="#f00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="5dp"
+            android:text="bilibili"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="5dp"
+            android:text="20评论"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="5dp"
+
+            android:text="刚刚"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/collectArticle"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="8dp"
+
+            android:background="@drawable/for_x"
+            android:text="收藏"
+            android:textColor="#9B9B9B" />
+    </GridLayout>
+</LinearLayout>
+
+
+

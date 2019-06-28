@@ -59,11 +59,5 @@ public class VideoMovieTabActivity extends Activity {
             Video video = new Video(id, name, url, description, imageId, category);
             videoList.add(video);
         }
-//        String url = "https://flv2.bn.netease.com/videolib1/1811/26/OqJAZ893T/HD/OqJAZ893T-mobile.mp4";
-//        Video car = new Video("汽车1", url, R.mipmap.logo3);
-//        videoList.add(car);
-//        String url2 = "https://flv2.bn.netease.com/videolib1/1811/26/OqJAZ893T/HD/OqJAZ893T-mobile.mp4";
-//        Video car2 = new Video("汽车2", url2, R.mipmap.logo3);
-//        videoList.add(car2);
     }
 }

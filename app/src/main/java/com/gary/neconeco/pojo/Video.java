@@ -2,10 +2,29 @@ package com.gary.neconeco.pojo;
 
 public class Video {
     private int id;
+    /**
+     * 视频名称
+     */
     private String name;
+    /**
+     * 视频评论数
+     */
+    private String comment;
+    /**
+     * 视频url
+     */
     private String url;
+    /**
+     * 视频url
+     */
     private String description;
+    /**
+     * 视频图片
+     */
     private int imageId;
+    /**
+     * 视频分类
+     */
     private String category;
 
     public Video(int id, String name, String url, String description, int imageId, String category) {

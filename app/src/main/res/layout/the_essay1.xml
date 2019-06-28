@@ -4,258 +4,272 @@
     android:id="@+id/homepage"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
+    android:layout_marginLeft="2dp"
     android:layout_marginTop="1dp"
     android:layout_marginRight="2dp"
-    android:layout_marginLeft="2dp"
-    android:layout_marginBottom="3dp">
+    android:layout_marginBottom="3dp"
+    android:orientation="vertical">
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/colorblue"
-        >
+        android:background="@color/colorblue">
+
         <Button
+            android:id="@+id/back_btn"
             android:layout_width="50dp"
             android:layout_height="40dp"
-            android:layout_marginTop="1dp"
             android:layout_gravity="center"
+            android:layout_marginTop="1dp"
             android:background="@drawable/left_vector"
-            android:id="@+id/back_btn"
-
             />
 
         <Button
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@drawable/search"
-            android:layout_marginRight="8dp"
             android:layout_gravity="right|center_vertical"
-            />
+            android:layout_marginRight="8dp"
+            android:background="@drawable/search" />
 
     </GridLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
 
-    >
-    <GridLayout
-        android:id="@+id/essay1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:rowCount="5"
-        android:columnCount="5"
-        >
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_columnSpan="5"
-            android:layout_rowSpan="5"
-            android:text="@string/homepage_essay1_title"
-            android:layout_marginTop="10dp"
-            android:textSize="22sp"
-            android:layout_marginBottom="3dp"
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/fortop1"
-            android:text="@string/bilibili"
-            android:textColor="#f00"
-            android:layout_gravity="left|bottom"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="3dp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="bilibili"
-            android:layout_gravity="bottom|left"
-            android:textSize="20sp"
-            android:layout_marginLeft="5dp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="20评论"
-            android:layout_gravity="bottom|left"
-            android:textSize="18sp"
-            android:layout_marginLeft="5dp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="刚刚"
-            android:layout_gravity="bottom|left"
-            android:textSize="18sp"
-            android:layout_marginLeft="5dp"
-            />
-        <CheckBox
-            android:id="@+id/focus"
-            android:layout_width="100dp"
-            android:layout_height="45dp"
-            android:button="@null"
-            android:layout_gravity="right|bottom"
-            android:drawableTop="@drawable/tuijian"
-            android:layout_marginBottom="5dp"
-            android:textSize="8pt"
+            android:orientation="vertical"
 
-            />
-    </GridLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:text="@string/homepage_essay1_1"
-        android:layout_marginTop="10dp"
-        android:textSize="18sp"
-        android:layout_marginBottom="3dp"
-        />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="600dp"
-        android:src="@drawable/essay_1_1"
-        android:layout_marginBottom="3dp"
-
-        />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="240dp"
-        android:layout_marginBottom="3dp"
-        android:src="@drawable/essay_1_2"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="240dp"
-        android:layout_marginBottom="3dp"
-        android:src="@drawable/essay_1_3"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="3dp"
-        android:text="@string/homepage_essay1_2"
-
-        android:textSize="18sp"
-        />
-    <ImageView
-        android:layout_marginBottom="3dp"
-        android:layout_width="wrap_content"
-        android:layout_height="240dp"
-        android:src="@drawable/essay_1_5"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="240dp"
-        android:layout_marginBottom="3dp"
-        android:src="@drawable/essay_1_6"/>
-    <GridLayout
-        android:id="@+id/tag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:rowCount="2"
-        android:columnCount="3"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        >
-
-        <Button
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginRight="8dp"
-            android:layout_columnSpan="1"
-            android:background="@drawable/fortop1"
-            android:text="动画"
-
-            android:textColor="#3685F4"
-            android:textSize="20sp" />
-        <Button
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginRight="8dp"
-            android:layout_columnSpan="1"
-            android:background="@drawable/fortop1"
-            android:text="新番"
-
-            android:textColor="#3685F4"
-            android:textSize="20sp" />
-        <Button
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginRight="8dp"
-            android:layout_columnSpan="1"
-            android:background="@drawable/fortop1"
-            android:text="资讯"
-
-            android:textColor="#3685F4"
-            android:textSize="20sp" />
-
-
-
-    </GridLayout>
-    <GridLayout
-        android:id="@+id/evaluate1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:rowCount="2"
-        android:columnCount="3"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        >
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="80dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="8dp"
             >
-            <RadioButton
-            android:id="@+id/like"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|bottom"
 
-            android:layout_marginBottom="5dp"
-            android:button="@null"
-            android:drawableTop="@drawable/like_rbt"
-            android:text="喜欢"
-            android:layout_columnSpan="1"
-            android:gravity="center"
-            android:textSize="16sp"
+            <GridLayout
+                android:id="@+id/essay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="5"
+                android:rowCount="5">
 
-            />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowSpan="5"
+                    android:layout_columnSpan="5"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/homepage_essay1_title"
+                    android:textSize="22sp" />
 
-            <RadioButton
-                android:id="@+id/dislike"
-                android:layout_width="100dp"
-                android:layout_height="69dp"
-                android:layout_gravity="bottom"
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/fortop1"
+                    android:text="@string/bilibili"
+                    android:textColor="#f00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|left"
+                    android:layout_marginLeft="5dp"
+                    android:text="bilibili"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|left"
+                    android:layout_marginLeft="5dp"
+                    android:text="20评论"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|left"
+                    android:layout_marginLeft="5dp"
+                    android:text="刚刚"
+                    android:textSize="18sp" />
+                <!--<CheckBox-->
+                <!--android:id="@+id/focus"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="65dp"-->
+                <!--android:button="@null"-->
+                <!--android:layout_gravity="right|bottom"-->
+                <!--android:drawableTop="@drawable/tuijian"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:textSize="8pt"-->
+
+                <!--/>-->
+                <!--<Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/fortop1"
+                    android:text="关注"
+                    android:textColor="#f00" />-->
+            </GridLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:text="@string/homepage_essay1_1"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="600dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/essay_1_1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/essay_1_2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/essay_1_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="@string/homepage_essay1_2"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/essay_1_5" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/essay_1_6" />
+
+            <GridLayout
+                android:id="@+id/tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:rowCount="2">
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="1"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/fortop1"
+                    android:text="动画"
+
+                    android:textColor="#3685F4"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="1"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/fortop1"
+                    android:text="新番"
+
+                    android:textColor="#3685F4"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="1"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/fortop1"
+                    android:text="资讯"
+
+                    android:textColor="#3685F4"
+                    android:textSize="20sp" />
 
 
-                android:button="@null"
-                android:drawableTop="@drawable/dislike_rbt"
-                android:text="不喜欢"
-                android:layout_columnSpan="1"
-                android:gravity="center"
-                android:textSize="16sp"
+            </GridLayout>
 
-                /></RadioGroup>
+            <GridLayout
+                android:id="@+id/evaluate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:rowCount="2">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/like"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="1"
+
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginBottom="5dp"
+                        android:button="@null"
+                        android:drawableTop="@drawable/like_rbt"
+                        android:gravity="center"
+                        android:text="喜欢"
+                        android:textSize="16sp"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/dislike"
+                        android:layout_width="100dp"
+                        android:layout_height="69dp"
+                        android:layout_columnSpan="1"
 
 
-    </GridLayout>
+                        android:layout_gravity="bottom"
+                        android:button="@null"
+                        android:drawableTop="@drawable/dislike_rbt"
+                        android:gravity="center"
+                        android:text="不喜欢"
+                        android:textSize="16sp"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="55dp"
-        android:layout_marginBottom="3dp"
-        android:background="#ffffff"/>
+                        />
+                </RadioGroup>
 
 
-</LinearLayout>
+            </GridLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginBottom="3dp"
+                android:background="#ffffff" />
+
+
+        </LinearLayout>
     </ScrollView>
 </LinearLayout>
