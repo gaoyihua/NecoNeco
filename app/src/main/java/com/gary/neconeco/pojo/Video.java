@@ -15,7 +15,7 @@ public class Video {
      */
     private String url;
     /**
-     * 视频url
+     * 视频简介
      */
     private String description;
     /**

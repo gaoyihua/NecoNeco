@@ -57,7 +57,7 @@ public class AnimeAdapter extends BaseAdapter {
         }
 
         holder.title.setText((String)list.get(position).get("title"));
-        holder.comment.setText((String)list.get(position).get("comment"));
+        holder.comment.setText(list.get(position).get("comment").toString());
 
         holder.title.setOnClickListener(new View.OnClickListener() {
             @Override

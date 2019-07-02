@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.gary.neconeco.R;
 import com.gary.neconeco.activity.video.VideoPlayActivity;
+import com.gary.neconeco.pojo.NecoVideo;
 
 import java.util.List;
 import java.util.Map;
@@ -20,11 +21,17 @@ import java.util.Map;
 public class RecommendAdapter extends BaseAdapter {
     private LayoutInflater mInflater;
     private List<Map<String,Object>> list;
-
+    private List<NecoVideo> videoList;
 
     public RecommendAdapter(Context context , List<Map<String,Object>> list){
         this.mInflater = LayoutInflater.from(context);
         this.list = list;
+    }
+
+    public RecommendAdapter(Context context , List<Map<String,Object>> list, List<NecoVideo> videoList){
+        this.mInflater = LayoutInflater.from(context);
+        this.list = list;
+        this.videoList = videoList;
     }
 
 
@@ -60,12 +67,16 @@ public class RecommendAdapter extends BaseAdapter {
         }
 
         final String nameStr = (String) list.get(position).get("name");
-        final String commentStr = (String) list.get(position).get("comment");
-        final Integer imageIdNum = (Integer) list.get(position).get("imageId");
+//        final String commentStr = (String) list.get(position).get("comment");
+        final String commentStr = String.valueOf(list.get(position).get("comment"));
+//        final Integer imageIdNum = (Integer) list.get(position).get("imageId");
+        final Integer imageIdNum = Double.valueOf(list.get(position).get("imageId").toString()).intValue();
+        System.out.println("imageIdNum : " + imageIdNum);
+
 
         holder.name.setText(nameStr);
         holder.comment.setText(commentStr);
-        holder.imageId.setImageResource(imageIdNum);
+        holder.imageId.setImageResource(R.drawable.q_play);
 
         holder.name.setOnClickListener(new View.OnClickListener() {
             @Override
