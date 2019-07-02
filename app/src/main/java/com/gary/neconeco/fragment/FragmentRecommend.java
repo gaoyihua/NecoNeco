@@ -139,7 +139,7 @@ public class FragmentRecommend extends Fragment {
                     StringBuffer stringBuffer =new StringBuffer();
                     byte [] buff =new byte[1024];
                     int len;
-                    while((len=inputStream.read(buff))!=-1){
+                    while((len=inputStream.read(buff))!= -1){
                         stringBuffer.append(new String(buff,0,len,"utf-8"));
                     }
                     System.out.println("获取" + stringBuffer.toString());

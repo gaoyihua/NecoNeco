@@ -35,10 +35,26 @@ import android.widget.Toast;
 
 import com.gary.neconeco.R;
 import com.gary.neconeco.activity.main.MainActivity;
+import com.gary.neconeco.entity.Result;
+import com.gary.neconeco.entity.StatusCode;
+import com.gary.neconeco.pojo.NecoUser;
 import com.gary.neconeco.util.Validator;
+import com.google.gson.Gson;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
@@ -322,19 +338,48 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             } catch (InterruptedException e) {
                 return false;
             }
-            Cursor cursor = db.rawQuery("select * from users where email='" + mEmail + "'", null);
-            if (cursor.moveToFirst()) {
-                id = cursor.getInt(0);
-                name = cursor.getString(1);
-                sex = cursor.getInt(2);
-                String email = cursor.getString(3);
-                String password = cursor.getString(4);
-                fans = cursor.getInt(5);
-                care = cursor.getInt(6);
-                description = cursor.getString(7);
-                if (email.equals(mEmail) && password.equals(mPassword)) {
-                    return true;
+            try {
+                URL url = new URL("http://10.0.2.2:8080/user/login");
+
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+
+                httpURLConnection.setRequestProperty("Content-Type", "application/json");
+                httpURLConnection.setRequestProperty("Connection", "Keep-Alive");
+                httpURLConnection.setRequestProperty("Charset", "UTF-8");
+                httpURLConnection.setUseCaches(false);
+                httpURLConnection.setDoOutput(true);
+                httpURLConnection.setDoInput(true);
+                httpURLConnection.connect();
+
+                Map<String, String> map = new HashMap();
+                map.put("email", mEmail);
+                map.put("password", mPassword);
+                JSONObject jsonObject = new JSONObject(map);
+
+                DataOutputStream dos=new DataOutputStream(httpURLConnection.getOutputStream());
+                dos.writeBytes(jsonObject.toString());
+                dos.flush();
+                dos.close();
+
+                int resultCode = httpURLConnection.getResponseCode();
+                if(HttpURLConnection.HTTP_OK==resultCode){
+                    InputStream inputStream = httpURLConnection.getInputStream();
+                    StringBuffer stringBuffer = new StringBuffer();
+                    byte [] buff = new byte[1024];
+                    int len;
+                    while((len = inputStream.read(buff))!=-1){
+                        stringBuffer.append(new String(buff,0,len,"utf-8"));
+                    }
+                    Gson gson = new Gson();
+                    Result result = gson.fromJson(stringBuffer.toString(), Result.class);
+
+                    if (StatusCode.OK == result.getCode()) {
+                        System.out.println("获取" + result.toString());
+                        return true;
+                    }
                 }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
             return false;
         }
